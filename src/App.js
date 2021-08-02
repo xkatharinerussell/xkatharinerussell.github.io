@@ -1,24 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import { Box, Menu, VStack, HStack, Flex, Heading, IconButton, useColorMode, Spacer, Text } from '@chakra-ui/react';
+import { FaSun, FaMoon, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import Home from './components/Home';
+import Resume from './components/Resume';
+import Nav from './components/Nav';
 
 function App() {
+
+  // const { colorMode, toggleColorMode } = useColorMode();
+  // const isDark = colorMode === "dark";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <VStack>
+      <Nav></Nav>
+      <Switch>
+        <Route path="/dev-profile/" component={Home} exact>
+        </Route>
+        {/* <Route path="/dev-profile/resume" component={Resume} exact>
+        </Route> */}
+      </Switch>
+    </VStack>
   );
 }
 
