@@ -1,9 +1,10 @@
 import { Box, VStack, HStack, IconButton, Text } from '@chakra-ui/react';
 import { FaSun, FaMoon, FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { Image } from "@chakra-ui/react"
 
 export default function Home() {
     return (
-        <VStack>
+        <VStack bgImage="url('https://unsplash.com/photos/aHZ0MPJv5Ac/1600x900')" bgPos="center" bgRepeat="no-repeat">
             <Box p={40}>
                 <Text align="center" fontSize="8xl" fontWeight="bold" bgGradient="linear(to-r, purple.600, pink.600, orange.400)" bgClip='text' >Hi I'm Katharine, a software engineer in Sydney.</Text>
             </Box>

@@ -20,8 +20,8 @@ function App() {
       <Switch>
         <Route path="/dev-profile/" component={Home} exact>
         </Route>
-        <Route path="/dev-profile/resume" component={Resume} exact>
-        </Route>
+        {/* <Route path="/dev-profile/resume" component={Resume} exact>
+        </Route> */}
       </Switch>
     </VStack>
   );
