@@ -1,8 +1,8 @@
 {
-  "name": "dev-profile",
+  "name": "xkatharinerussell.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://xkatharinerussell.github.io/dev-profile",
+  "homepage": "http://xkatharinerussell.github.io/",
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11.4.0",
